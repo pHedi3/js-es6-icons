@@ -20,6 +20,18 @@
     width: 100%;
 }
 
+.icon-tag i.user {
+    color: purple;
+}
+
+.icon-tag i.animal {
+    color: blue;
+}
+
+.icon-tag i.vegetable {
+    color: orange;
+}
+
 .icon-tag .name {
     width: 100%;
 }
