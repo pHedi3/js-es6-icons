@@ -96,15 +96,38 @@ const icons = [
 		family: 'fas'
 	}
 ];
-const stampIcon = document.querySelector('.icon-container')
 
+const filterFuncion = (arrey, select) => {
+    return arrey.filter((element) => {
+        if (select == 'all') {
+            return true
+        }
+        if (select == element.type) {
+            return true
+        }
+        
+        return false
+    })
+}
 
-icons.forEach((icons) => {
-    const {name,prefix,family,type} = icons
-stampIcon.innerHTML += 
-    `<div class="icon-tag">
-        <i class="${family} ${prefix}${name} ${type}"></i>
-        <div class="name">${name}</div>
-    </div>
-    `
+const stampFuncion = (arrey) => {
+    const stampIcon = document.querySelector('.icon-container')
+    stampIcon.innerHTML = '';
+    arrey.forEach((element) => {
+        const {name,prefix,family,type} = element
+    stampIcon.innerHTML += 
+        `<div class="icon-tag">
+            <i class="${family} ${prefix}${name} ${type}"></i>
+            <div class="name">${name}</div>
+        </div>
+        `
+    })
+}
+
+stampFuncion(filterFuncion(icons, 'all'))
+
+const selecotr = document.getElementById('selection')
+
+selecotr.addEventListener('change', (event) => {
+    stampFuncion(filterFuncion(icons, `${event.target.value}`))
 })

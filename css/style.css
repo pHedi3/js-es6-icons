@@ -1,7 +1,26 @@
-.container {
-    background-color: #ddd;
+
+.title h1 {
+    color:rgb(41, 156, 194) ;
 }
 
+.title .row {
+    background-color: rgb(41, 156, 194);
+    height: 60px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.title .row span {
+    font-size: 20px;
+}
+
+
+
+
+.container-for-icon {
+    background-color: #ddd;
+}
 
 .icon-tag {
     flex-basis: calc((100% / 5) - 36px);
@@ -9,6 +28,7 @@
     height: 100px;
     text-align: center;
     margin: 18px;
+
     background-color: #fff;
     border-radius: 12px;
     display: flex;
@@ -18,6 +38,8 @@
 
 .icon-tag i {
     width: 100%;
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
 .icon-tag i.user {
@@ -34,5 +56,7 @@
 
 .icon-tag .name {
     width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
