@@ -102,8 +102,9 @@ const stampIcon = document.querySelector('.icon-container')
 icons.forEach((icons) => {
     const {name,prefix,family} = icons
 stampIcon.innerHTML += 
-    `<div>
+    `<div class="icon-tag">
         <i class="${family} ${prefix}${name}"></i>
+        <div class="name">${name}</div>
     </div>
     `
 })

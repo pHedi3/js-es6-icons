@@ -1,0 +1,26 @@
+.container {
+    background-color: #ddd;
+}
+
+
+.icon-tag {
+    flex-basis: calc((100% / 5) - 36px);
+    max-width: calc((100% / 5) - 36px);
+    height: 100px;
+    text-align: center;
+    margin: 18px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.icon-tag i {
+    width: 100%;
+}
+
+.icon-tag .name {
+    width: 100%;
+}
+
